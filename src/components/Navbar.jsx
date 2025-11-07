@@ -5,8 +5,8 @@ const Navbar = () => {
   const data = [
     { link: "#", title: "Home" },
     { link: "#about", title: "About" },
-    { link: "#services", title: "Services" },
     { link: "#skills", title: "Skills" },
+    { link: "#services", title: "Services" },
     { link: "#contact", title: "Contact" },
   ];
 

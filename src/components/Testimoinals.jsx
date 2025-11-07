@@ -2,17 +2,17 @@ import logoNav from "../assets/logo.jpeg";
 
 const reviews = [
   {
-    name: "Sara Khan",
-    role: "Product Manager",
+    name: "Muhammad Ullah",
+    role: "Full Stack Developer",
     text: "Mansoor delivered a clean, fast landing page. Very responsive to feedback and professional throughout.",
   },
   {
-    name: "Ali Raza",
-    role: "Startup Founder",
+    name: "Talha Waleed",
+    role: "Frontend Developer",
     text: "Great work — the app is performant and mobile-friendly. Communication was excellent.",
   },
   {
-    name: "Nida Ahmed",
+    name: "Yousaf Ibrahim",
     role: "Designer",
     text: "Loved the attention to detail. The UI felt polished and accessible on first release.",
   },
