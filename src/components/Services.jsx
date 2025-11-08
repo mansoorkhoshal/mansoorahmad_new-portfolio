@@ -11,7 +11,7 @@ const services = [
   },
   {
     title: "Backend Development",
-    desc: "Modern, accessible UIs using React + Tailwind. Pixel-perfect, responsive layouts.",
+    desc: "Scalable APIs and secure backend systems built with Node.js and Express, ensuring reliable performance and clean data handling.",
     Icon: FaServer,
   },
   {
@@ -21,7 +21,7 @@ const services = [
   },
   {
     title: "UI/UX Design",
-    desc: "Mobile-first, performant web apps that work well on all devices and screens.",
+    desc: "I craft friendly, easy-to-use interfaces that help users complete tasks quickly and come back happily.",
     Icon: FiPenTool,
   },
   {

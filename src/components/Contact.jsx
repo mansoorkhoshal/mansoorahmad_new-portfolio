@@ -1,6 +1,24 @@
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contact() {
+  const contactDetails = [
+    {
+      icon: FaEnvelope,
+      head: "Email",
+      subHead: "mansoorahmad.dev44@gmail.com",
+    },
+    {
+      icon: FaPhoneAlt,
+      head: "Phone",
+      subHead: "+92 323 4466448",
+    },
+    {
+      icon: FaMapMarkerAlt,
+      head: "Address",
+      subHead: "Lahore, Pakistan",
+    },
+  ];
+
   return (
     <section id="contact" className="py-16 bg-emerald-50">
       <div className="max-w-6xl mx-auto px-6">
@@ -15,45 +33,26 @@ export default function Contact() {
           </p>
         </div>
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-            <div className="flex items-start gap-4">
-              <div className="shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
-                <FaEnvelope className="text-xl" />
-              </div>
-              <div className="min-w-0">
-                <h4 className="text-lg font-semibold text-gray-800">Email</h4>
-
-                <p className="mt-2 text-sm text-gray-600 break-words">
-                  mansoorahmad.dev44@gmail.com
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-            <div className="flex items-start gap-4">
-              <div className="shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
-                <FaPhoneAlt className="text-xl" />
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">Phone</h4>
-                <p className="mt-2 text-sm text-gray-600">+92 323 4466448</p>
+          {contactDetails.map((item, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1"
+            >
+              <div className="flex items-start gap-4">
+                <div className="shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
+                  <item.icon className="text-xl" />
+                </div>
+                <div className="min-w-0">
+                  <h4 className="text-lg font-semibold text-gray-800">
+                    {item.head}
+                  </h4>
+                  <p className="text-sm text-gray-600 break-words">
+                    {item.subHead}
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-
-          <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
-            <div className="flex items-start gap-4">
-              <div className="shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
-                <FaMapMarkerAlt className="text-xl" />
-              </div>
-              <div>
-                <h4 className="text-lg font-semibold text-gray-800">
-                  Location
-                </h4>
-                <p className="mt-2 text-sm text-gray-600">Lahore, Pakistan</p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">

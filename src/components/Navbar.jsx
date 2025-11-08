@@ -20,7 +20,7 @@ const Navbar = () => {
             <ul className="hidden lg:flex gap-8 text-xl">
               {data.map((item, index) => (
                 <li key={index} className="list-none">
-                  <a href={item.link} className="text-white font-inter italic">
+                  <a href={item.link} className="text-white font-inter italic hover:shadow-xl">
                     {item.title}
                   </a>
                 </li>

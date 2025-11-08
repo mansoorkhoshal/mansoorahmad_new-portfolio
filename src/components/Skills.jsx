@@ -77,7 +77,7 @@ const Skills = () => {
 };
 
 const SkillCard = ({ icon, title }) => (
-  <div className="flex flex-col items-center justify-center bg-white rounded-xl p-6 shadow hover:shadow-md transition">
+  <div className="flex flex-col items-center justify-center bg-white rounded-xl p-6 shadow hover:shadow-xl transition">
     <div className="text-4xl mb-3">{icon}</div>
     <p className="font-semibold">{title}</p>
   </div>

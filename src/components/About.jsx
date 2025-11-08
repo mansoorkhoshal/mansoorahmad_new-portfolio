@@ -1,12 +1,14 @@
 import logoNav from "../assets/logo.jpeg";
 import Lottie from "lottie-react";
-import aboutAnimation from "../../src/assets/aboutme.json";
+// import aboutAnimation from "../assets/user2.png";
+import aboutAnimation from "../assets/aboutme.json";
 import {
   AiOutlineLinkedin,
   AiOutlineGithub,
   AiOutlineDiscord,
   AiOutlineReddit,
 } from "react-icons/ai";
+// import { AiOutlineProfile } from "react-icons/ai";
 
 const socialLinks = [
   {
@@ -36,21 +38,18 @@ export default function About() {
     <section className="bg-white" id="#about">
       <div className="max-w-7xl mx-auto px-6 py-12 lg:py-10">
         <div className=" bg-emerald-50 backdrop-blur-md border border-white/30 rounded-2xl shadow-xl overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 items-center">
+          <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-6 lg:gap-0 items-center">
             <div className="p-8 lg:px-12 lg:py-16">
-              <div className="flex items-center gap-4 mb-4">
-                {/* <img
-                  src={logoNav}
-                  alt="logo"
-                  className="h-15 w-15 rounded-full object-cover border-green-300 shrink-0"
-                /> */}
+              <div className="flex items-center gap-2 mb-4">
                 <Lottie
                   animationData={aboutAnimation}
-                  className="h-15 w-15 rounded-full border bg-emerald-400 object-cover border-green-300 shrink-0"
+                  loop
+                  autoplay
+                  className="hidden sm:block w-24 h-24 md:w-32 md:h-32 lg:w-40 lg:h-40 object-contain bg-transparent shrink-0"
                 />
                 <div>
                   <h2 className="text-lg text-emerald-600">Hello, I'm</h2>
-                  <h1 className="text-4xl sm:text-5xl font-inter font-bold text-neutral-700 -tracking-tight">
+                  <h1 className="text-4xl sm:text-4xl md:4xl font-inter font-bold text-neutral-700 -tracking-tight">
                     Mansoor Ahmad
                   </h1>
                 </div>
