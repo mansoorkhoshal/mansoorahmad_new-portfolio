@@ -1,60 +1,3 @@
-// import React from "react";
-// import { FaEnvelope, FaPhoneAlt, FaLocationArrow } from "react-icons/fa";
-
-// const Contact = () => {
-//   return (
-//     <section id="contact" className="py-16 bg-emerald-50 text-gray-800">
-//       <div className="max-w-5xl mx-auto px-6 text-center">
-//         <h2 className="text-3xl font-bold mb-10 text-gray-900">Get in Touch</h2>
-
-//         <div className="grid gap-8 md:grid-cols-3">
-//           <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-//             <FaEnvelope className="text-red-600 text-3xl mx-auto mb-3" />
-//             <h4 className="font-semibold text-lg mb-2">Email</h4>
-//             <p className="text-gray-600">mansoorahmad.dev44@gmail.com</p>
-//           </div>
-
-//           <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-//             <FaPhoneAlt className="text-green-600 text-3xl mx-auto mb-3" />
-//             <h4 className="font-semibold text-lg mb-2">Phone</h4>
-//             <p className="text-gray-600">+92 323 4466448</p>
-//           </div>
-
-//           <div className="bg-white p-6 rounded-2xl shadow hover:shadow-md transition">
-//             <FaLocationArrow className="text-red-600 text-3xl mx-auto mb-3" />
-//             <h4 className="font-semibold text-lg mb-2">Location</h4>
-//             <p className="text-gray-600">Lahore, Pakistan</p>
-//           </div>
-//         </div>
-
-//         <form className="mt-10 max-w-2xl mx-auto space-y-4">
-//           <input
-//             type="text"
-//             placeholder="Your Name"
-//             className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
-//           />
-//           <input
-//             type="email"
-//             placeholder="Your Email"
-//             className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
-//           />
-//           <textarea
-//             rows="4"
-//             placeholder="Your Message"
-//             className="w-full p-3 rounded-lg border border-gray-300 focus:outline-none focus:border-blue-500"
-//           ></textarea>
-//           <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition">
-//             Send Message
-//           </button>
-//         </form>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Contact;
-
-import React from "react";
 import { FaEnvelope, FaPhoneAlt, FaMapMarkerAlt } from "react-icons/fa";
 
 export default function Contact() {
@@ -67,16 +10,14 @@ export default function Contact() {
             Get in touch
           </h2>
           <p className="mt-3 text-gray-600 max-w-2xl mx-auto">
-            Whether you have a project idea or just want to say hello — drop a message and I'll reply.
+            Whether you have a project idea or just want to say hello — drop a
+            message and I'll reply.
           </p>
         </div>
-
-        {/* Contact cards */}
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-          {/* Email */}
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
+              <div className="shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
                 <FaEnvelope className="text-xl" />
               </div>
               <div className="min-w-0">
@@ -88,11 +29,9 @@ export default function Contact() {
               </div>
             </div>
           </div>
-
-          {/* Phone */}
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
+              <div className="shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
                 <FaPhoneAlt className="text-xl" />
               </div>
               <div>
@@ -102,25 +41,26 @@ export default function Contact() {
             </div>
           </div>
 
-          {/* Location */}
           <div className="bg-white rounded-2xl p-6 shadow-md hover:shadow-lg transition transform hover:-translate-y-1">
             <div className="flex items-start gap-4">
-              <div className="flex-shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
+              <div className="shrink-0 p-3 rounded-lg bg-emerald-100 text-emerald-600">
                 <FaMapMarkerAlt className="text-xl" />
               </div>
               <div>
-                <h4 className="text-lg font-semibold text-gray-800">Location</h4>
+                <h4 className="text-lg font-semibold text-gray-800">
+                  Location
+                </h4>
                 <p className="mt-2 text-sm text-gray-600">Lahore, Pakistan</p>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Form + side note */}
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
-          {/* Form card (main) */}
           <div className="lg:col-span-2 bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
-            <h3 className="text-xl font-semibold text-gray-800 mb-4">Send a message</h3>
+            <h3 className="text-xl font-semibold text-gray-800 mb-4">
+              Send a message
+            </h3>
 
             <form className="space-y-4">
               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -163,16 +103,17 @@ export default function Contact() {
                   Send Message
                 </button>
 
-                <p className="text-sm text-gray-500">Typical response time: 1-2 business days</p>
+                <p className="text-sm text-gray-500">
+                  Typical response time: 1-2 business days
+                </p>
               </div>
             </form>
           </div>
-
-          {/* Right column note / quick links */}
           <aside className="bg-emerald-100 rounded-2xl p-6 text-gray-700 shadow-inner">
             <h4 className="font-semibold mb-2">Need a fast reply?</h4>
             <p className="text-sm mb-4">
-              For urgent work, put “Urgent” in the subject or message and I'll prioritize.
+              For urgent work, put “Urgent” in the subject or message and I'll
+              prioritize.
             </p>
 
             <div className="flex flex-col gap-3">

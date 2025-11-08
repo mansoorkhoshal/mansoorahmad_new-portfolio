@@ -8,13 +8,18 @@ import {
   SiGit,
   SiGithub,
 } from "react-icons/si";
-import { VscVscode } from "react-icons/vsc";
+import { VscVscodeInsiders } from "react-icons/vsc";
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-16 bg-white text-gray-800">
+    <section id="skills" className="py-16 bg-emerald-50 text-gray-800">
       <div className="max-w-6xl mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-10 text-gray-900">My Skills</h2>
+        <h3 className="text-sm text-emerald-600 font-medium">Skills & Tools</h3>
+        <h2 className="text-3xl font-bold text-gray-900">My Toolbox</h2>
+        <p className="my-5 text-gray-600 max-w-2xl mx-auto">
+          I combine the right tools and technologies to create websites and web
+          apps that look great, perform flawlessly, and meet your goals.
+        </p>
 
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-6">
           <SkillCard
@@ -62,7 +67,7 @@ const Skills = () => {
             title="GitHub"
           />
           <SkillCard
-            icon={<VscVscode className="text-blue-800 text-5xl" />}
+            icon={<VscVscodeInsiders className="text-blue-800 text-5xl" />}
             title="GitHub"
           />
         </div>
@@ -72,7 +77,7 @@ const Skills = () => {
 };
 
 const SkillCard = ({ icon, title }) => (
-  <div className="flex flex-col items-center justify-center bg-gray-50 rounded-xl p-6 shadow hover:shadow-md transition">
+  <div className="flex flex-col items-center justify-center bg-white rounded-xl p-6 shadow hover:shadow-md transition">
     <div className="text-4xl mb-3">{icon}</div>
     <p className="font-semibold">{title}</p>
   </div>

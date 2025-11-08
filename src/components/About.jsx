@@ -1,71 +1,3 @@
-// import Lottie from "lottie-react";
-// import aboutAnimation from "../../src/assets/aboutme.json";
-// import { FaLinkedinIn } from "react-icons/fa6";
-// import {
-//   AiOutlineGithub,
-//   AiOutlineDiscord,
-//   AiOutlineReddit,
-// } from "react-icons/ai";
-
-// const About = () => {
-//   const socialLinks = [
-//     {
-//       link: "https://www.linkedin.com/in/mansoorkhoshal/",
-//       icon: <FaLinkedinIn />,
-//     },
-//     {
-//       link: "https://www.linkedin.com/in/mansoorkhoshal/",
-//       icon: <AiOutlineGithub />,
-//     },
-//     {
-//       link: "https://www.linkedin.com/in/mansoorkhoshal/",
-//       icon: <AiOutlineDiscord />,
-//     },
-//     {
-//       link: "https://www.linkedin.com/in/mansoorkhoshal/",
-//       icon: <AiOutlineReddit />,
-//     },
-//   ];
-
-//   return (
-//     <section className="mt-20 h-screen grid items-center bg-white transition ">
-//       <div className="container flex flex-col relative items-center">
-//         <Lottie
-//           animationData={aboutAnimation}
-//           loop={true}
-//           className="w-72 h-80 overflow-hidden mb-6"
-//         />
-//         <h1>
-//           I'm Mansoor Ahmad <br /> Full Stack Developer
-//         </h1>
-//         <p className="w-lg text-center mt-1 mb-8">
-//           You are click away from building your dream website or web app. Send
-//           me your details of your project for a modren, mobile responsive,
-//           highly performant website today!
-//         </p>
-//         <div>
-//           <a href="#contact">Let's Talk</a>
-//           <a href="#portfolio">My Work</a>
-//         </div>
-//         <div>
-//           {socialLinks.map((item, index) => (
-//             <a
-//               key={index}
-//               href={item.link}
-//               target="_blank"
-//               rel="noopener noreferrer"
-//             >
-//               {item.icon}
-//             </a>
-//           ))}
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default About;
-
 import logoNav from "../assets/logo.jpeg";
 import Lottie from "lottie-react";
 import aboutAnimation from "../../src/assets/aboutme.json";
@@ -83,17 +15,17 @@ const socialLinks = [
     Icon: AiOutlineLinkedin,
   },
   {
-    href: "https://github.com/your-username",
+    href: "https://github.com/mansoorkhoshal",
     label: "GitHub",
     Icon: AiOutlineGithub,
   },
   {
-    href: "https://discord.com/users/your-id",
+    href: "https://discord.com/users/1368626128222163034",
     label: "Discord",
     Icon: AiOutlineDiscord,
   },
   {
-    href: "https://www.reddit.com/user/your-username",
+    href: "https://www.reddit.com/user/mansoorkhoshal",
     label: "Reddit",
     Icon: AiOutlineReddit,
   },
@@ -101,38 +33,46 @@ const socialLinks = [
 
 export default function About() {
   return (
-    <section className="bg-emerald-50">
-      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-20">
-        <div className="bg-white backdrop-blur-md border border-white/30 rounded-2xl shadow-xl overflow-hidden">
+    <section className="bg-white" id="#about">
+      <div className="max-w-7xl mx-auto px-6 py-12 lg:py-10">
+        <div className=" bg-emerald-50 backdrop-blur-md border border-white/30 rounded-2xl shadow-xl overflow-hidden">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-0 items-center">
             <div className="p-8 lg:px-12 lg:py-16">
               <div className="flex items-center gap-4 mb-4">
-                <a href="#" className="shrink-0">
-                  <img
-                    src={logoNav}
-                    alt="logo"
-                    className="h-15 w-15 rounded-full object-cover border-green-300"
-                  />
-                </a>
+                {/* <img
+                  src={logoNav}
+                  alt="logo"
+                  className="h-15 w-15 rounded-full object-cover border-green-300 shrink-0"
+                /> */}
+                <Lottie
+                  animationData={aboutAnimation}
+                  className="h-15 w-15 rounded-full border bg-emerald-400 object-cover border-green-300 shrink-0"
+                />
                 <div>
                   <h2 className="text-lg text-emerald-600">Hello, I'm</h2>
-                  <h1 className="text-3xl sm:text-4xl font-extrabold text-gray-700 -tracking-tight">
+                  <h1 className="text-4xl sm:text-5xl font-inter font-bold text-neutral-700 -tracking-tight">
                     Mansoor Ahmad
                   </h1>
                 </div>
               </div>
+              <h2 className="mt-3 text-xl sm:text-3xl font-semibold text-emerald-300 text-shadow-sm">
+                Full Stack Developer
+              </h2>
 
               <p className="mt-4 text-gray-600 text-base sm:text-lg leading-relaxed">
-                You are one click away from building your dream website or web
-                app. I build modern, mobile-responsive, and high-performance
-                websites. Tell me your idea — I'll turn it into a polished web
-                product.
+                Your idea, my code <br /> together we'll create a website
+                <span className="font-bold"> that wows your audience!</span>
+                <br />
+                <span className="italic text-xl">
+                  Let's turn your vision into a modern web experience that gets
+                  noticed!
+                </span>
               </p>
 
               <div className="mt-6 flex flex-wrap gap-3">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 text-white font-medium shadow"
+                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600 duration-300 text-white font-medium shadow transform transition hover:-translate-y-1.5"
                 >
                   Let's Talk
                   <svg
@@ -152,8 +92,8 @@ export default function About() {
                 </a>
 
                 <a
-                  href="#portfolio"
-                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600  text-white font-medium shadow-sm"
+                  href="#opensource"
+                  className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 bg-emerald-500 hover:bg-emerald-600  duration-300 text-white font-medium shadow-sm transform transition hover:-translate-y-1.5"
                 >
                   My Work
                 </a>
@@ -161,7 +101,7 @@ export default function About() {
 
               <div className="mt-6 flex items-center gap-4">
                 <span className="text-xl text-emerald-600">Find me on</span>
-                <div className="flex items-center gap-3 ml-2">
+                <div className="flex items-center gap-3 ml-2 relative">
                   {socialLinks.map(({ href, Icon, label }, i) => (
                     <a
                       key={i}
@@ -169,27 +109,12 @@ export default function About() {
                       target="_blank"
                       rel="noopener noreferrer"
                       aria-label={label}
-                      className="p-2 rounded-xl hover:scale-105 transform transition duration-300 border border-gray-300 shadow-sm"
+                      className="p-2 rounded-xl hover:scale-120 transform transition duration-150 border border-gray-300 shadow-sm"
                     >
                       <Icon className="text-2xl text-slate-700" />
                     </a>
                   ))}
                 </div>
-              </div>
-
-              <div className="mt-6 flex flex-wrap gap-2">
-                <span className="text-xs px-3 py-1 rounded-full text-white bg-blue-600 hover:bg-blue-900 duration-400">
-                  React
-                </span>
-                <span className="text-xs px-3 py-1 rounded-full text-black bg-blue-300 hover:bg-blue-500 duration-400">
-                  Tailwind
-                </span>
-                <span className="text-xs px-3 py-1 rounded-full text-white bg-green-600 hover:bg-green-900 duration-400">
-                  Node.js
-                </span>
-                <span className="text-xs px-3 py-1 rounded-full text-white bg-slate-600 hover:bg-slate-900 duration-400">
-                  Responsive
-                </span>
               </div>
             </div>
             <div className="p-8 flex items-center justify-center">
@@ -197,7 +122,11 @@ export default function About() {
                 className="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-xl shadow-2xl overflow-hidden"
                 aria-hidden="true"
               >
-                <Lottie animationData={aboutAnimation} loop={true} />
+                <img
+                  src={logoNav}
+                  alt="logo"
+                  className="object-cover shrink-0"
+                />
               </div>
             </div>
           </div>

@@ -1,12 +1,11 @@
-
 import { IoMdColorPalette } from "react-icons/io";
 
 const Navbar = () => {
   const data = [
-    { link: "#", title: "Home" },
-    { link: "#about", title: "About" },
+    { link: "#", title: "About" },
     { link: "#skills", title: "Skills" },
     { link: "#services", title: "Services" },
+    { link: "#opensource", title: "Open Source" },
     { link: "#contact", title: "Contact" },
   ];
 
@@ -15,7 +14,7 @@ const Navbar = () => {
       <nav className="w-full">
         <div className="max-w-7xl mx-auto w-full">
           <div className="w-full flex items-center justify-between h-20 px-4">
-            <div className="w-14 h-14 rounded-full bg-green-500 flex items-center justify-center text-white text-xl font-semibold shadow-md">
+            <div className="w-14 h-14 rounded-full bg-emerald-500 flex items-center justify-center text-white text-xl font-semibold shadow-md">
               MA
             </div>
             <ul className="hidden lg:flex gap-8 text-xl">

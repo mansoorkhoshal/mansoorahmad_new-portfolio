@@ -33,7 +33,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="bg-emerald-50 py-12">
+    <section className="bg-white py-12" id="services">
       <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-10">
           <h3 className="text-sm text-emerald-600 font-medium">What I do</h3>
@@ -50,10 +50,10 @@ const Services = () => {
           {services.map((itme, index) => (
             <article
               key={index}
-              className="bg-white rounded-2xl p-6 shadow-md hover:shadow-xl transition"
+              className="bg-emerald-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition"
             >
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-emerald-100 text-emerald-600 mb-4">
-                <itme.Icon className="text-2xl" />
+              <div className="inline-flex items-center justify-center w-15 h-15 rounded-full border border-emerald-200 bg-emerald-100 text-emerald-600 mb-4">
+                <itme.Icon className="text-3xl" />
               </div>
 
               <h4 className="text-xl font-semibold text-gray-800 mb-2">

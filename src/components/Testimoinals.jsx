@@ -1,17 +1,22 @@
-import logoNav from "../assets/logo.jpeg";
+import testimoinals1 from "../assets/testimoinal1.jpg";
+import testimoinals2 from "../assets/testimoinal2.png";
+import testimoinals3 from "../assets/testimoinal3.jpg";
 
 const reviews = [
   {
+    testimoinalImage: testimoinals1,
     name: "Muhammad Ullah",
     role: "Full Stack Developer",
     text: "Mansoor delivered a clean, fast landing page. Very responsive to feedback and professional throughout.",
   },
   {
+    testimoinalImage: testimoinals2,
     name: "Talha Waleed",
     role: "Frontend Developer",
-    text: "Great work — the app is performant and mobile-friendly. Communication was excellent.",
+    text: "Great work - the app is performant and mobile-friendly. Communication was excellent.",
   },
   {
+    testimoinalImage: testimoinals3,
     name: "Yousaf Ibrahim",
     role: "Designer",
     text: "Loved the attention to detail. The UI felt polished and accessible on first release.",
@@ -21,7 +26,7 @@ const reviews = [
 export default function Testimonials() {
   return (
     <section className="py-12 bg-white">
-      <div className="max-w-6xl mx-auto px-6">
+      <div className="max-w-7xl mx-auto px-6">
         <div className="text-center mb-8">
           <h3 className="text-sm text-emerald-600 font-medium">Trusted by</h3>
           <h2 className="text-3xl font-extrabold text-gray-800">
@@ -37,13 +42,13 @@ export default function Testimonials() {
           {reviews.map((r, i) => (
             <blockquote
               key={i}
-              className="p-6 bg-emerald-50 rounded-2xl border border-emerald-100 shadow-sm"
+              className="p-6 bg-emerald-50 rounded-2xl border border-emerald-100 shadow-md hover:shadow-xl"
             >
               <div className="flex items-center gap-4 mb-4">
                 <img
-                  src={logoNav}
+                  src={r.testimoinalImage}
                   alt={r.name}
-                  className="w-12 h-12 rounded-full object-cover border border-emerald-100"
+                  className="w-20 h-20 rounded-full object-cover border border-emerald-100"
                 />
                 <div>
                   <p className="font-semibold text-gray-800">{r.name}</p>

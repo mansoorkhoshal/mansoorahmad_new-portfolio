@@ -1,4 +1,4 @@
-import logoNav from "../assets/logo.jpeg";
+import logoNav from "../assets/logo.jpg";
 import {
   AiOutlineLinkedin,
   AiOutlineGithub,
@@ -15,7 +15,7 @@ export default function Footer() {
             <img
               src={logoNav}
               alt="logo"
-              className="w-12 h-12 rounded-full object-cover border border-white/20"
+              className="w-15 h-15 rounded-full object-cover border border-neutral-600"
             />
             <div>
               <h4 className="font-bold text-lg">Mansoor Ahmad</h4>
@@ -26,13 +26,13 @@ export default function Footer() {
           <div className="flex-1">
             <nav className="flex flex-wrap gap-4 justify-center md:justify-center">
               <a href="#" className="text-white/90 hover:underline">
-                Home
-              </a>
-              <a href="#about" className="text-white/90 hover:underline">
                 About
               </a>
               <a href="#services" className="text-white/90 hover:underline">
                 Services
+              </a>
+              <a href="#opensource" className="text-white/90 hover:underline">
+                Open Source
               </a>
               <a href="#skills" className="text-white/90 hover:underline">
                 Skills
@@ -48,34 +48,35 @@ export default function Footer() {
               href="https://www.linkedin.com/in/mansoorkhoshal/"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-md bg-white/10 hover:bg-white/20"
+              className="p-2 rounded-xl bg-white/10 hover:bg-white/20 hover:scale-120 transform transition duration-150 shadow-sm"
               aria-label="LinkedIn"
             >
-              <AiOutlineLinkedin className="text-xl" />
+              <AiOutlineLinkedin className="text-2xl" />
             </a>
             <a
               href="https://github.com/mansoorkhoshal"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-md bg-white/10 hover:bg-white/20"
+              className="p-2 rounded-xl bg-white/10 hover:bg-white/20 hover:scale-120 transform transition duration-150 shadow-sm"
               aria-label="GitHub"
             >
-              <AiOutlineGithub className="text-xl" />
+              <AiOutlineGithub className="text-2xl" />
             </a>
             <a
-              href="https://discord.com/mansoorkhoshal"
+              href="https://discord.com/users/1368626128222163034"
               target="_blank"
               rel="noopener noreferrer"
-              className="p-2 rounded-md bg-white/10 hover:bg-white/20"
+              className="p-2 rounded-xl bg-white/10 hover:bg-white/20 hover:scale-120 transform transition duration-150 shadow-sm"
               aria-label="Discord"
             >
-              <AiOutlineDiscord className="text-xl" />
+              <AiOutlineDiscord className="text-2xl" />
             </a>
           </div>
         </div>
 
         <div className="mt-8 border-t border-white/10 pt-6 text-center text-sm text-white/80">
-          © {new Date().getFullYear()} Mansoor Ahmad — Built with React + Vite & Tailwind
+          © {new Date().getFullYear()} Mansoor Ahmad — Built with React + Vite &
+          Tailwind
         </div>
       </div>
     </footer>
