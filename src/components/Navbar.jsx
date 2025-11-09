@@ -1,4 +1,4 @@
-import { IoMdColorPalette } from "react-icons/io";
+// import { IoMdColorPalette } from "react-icons/io";
 
 const Navbar = () => {
   const data = [
@@ -26,9 +26,9 @@ const Navbar = () => {
                 </li>
               ))}
             </ul>
-            <button className="shrink-0 ml-4">
+            {/* <button className="shrink-0 ml-4 ">
               <IoMdColorPalette className="text-4xl text-white cursor-pointer" />
-            </button>
+            </button> */}
           </div>
         </div>
       </nav>

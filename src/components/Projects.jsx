@@ -6,24 +6,21 @@ const projects = [
     title: "Portfolio Website",
     desc: "A personal portfolio website to showcase my skills, projects, and contact info using React and Tailwind CSS.",
     tech: ["React", "Tailwind CSS", "Vite"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/mansoorkhoshal",
   },
   {
     id: "project2",
     title: "Task Manager App",
     desc: "A full-stack task manager app to create, update, and track tasks with MongoDB, Node.js, and Express.",
     tech: ["Node.js", "Express", "MongoDB", "React"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/mansoorkhoshal",
   },
   {
     id: "project3",
     title: "E-commerce Landing Page",
     desc: "A responsive landing page for an e-commerce site with modern UI, animations, and mobile-first design.",
     tech: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/mansoorkhoshal",
   },
 ];
 
@@ -69,14 +66,6 @@ const Projects = () => {
                   className="flex items-center gap-1 text-gray-800 hover:text-emerald-500 duration-300 font-semibold"
                 >
                   <FaGithub /> GitHub
-                </a>
-                <a
-                  href={live}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-1 text-gray-800 hover:text-emerald-500 duration-300 font-semibold"
-                >
-                  <FaExternalLinkAlt /> Live Demo
                 </a>
               </div>
             </div>

@@ -54,7 +54,7 @@ export default function Contact() {
             </div>
           ))}
         </div>
-
+        {/* 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
           <div className="lg:col-span-2 bg-white rounded-2xl p-6 sm:p-8 shadow-lg">
             <h3 className="text-xl font-semibold text-gray-800 mb-4">
@@ -130,7 +130,7 @@ export default function Contact() {
               </a>
             </div>
           </aside>
-        </div>
+        </div> */}
       </div>
     </section>
   );
