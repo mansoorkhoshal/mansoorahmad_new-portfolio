@@ -33,7 +33,7 @@ const socialLinks = [
 
 export default function About() {
   return (
-    <section className="bg-white" id="#about">
+    <section className="bg-white" id="about">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 py-8 sm:py-12 lg:py-10">
         <div className="bg-emerald-50 backdrop-blur-md border border-white/30 rounded-2xl shadow-xl overflow-hidden">
           <div className="flex flex-col-reverse lg:grid lg:grid-cols-2 gap-6 lg:gap-0 items-center">
@@ -52,7 +52,7 @@ export default function About() {
                   </h1>
                 </div>
               </div>
-              <h2 className="mt-3 text-lg sm:text-xl md:text-3xl font-semibold text-emerald-300 text-shadow-sm">
+              <h2 className="mt-3 text-lg sm:text-xl md:text-3xl font-semibold text-emerald-600 text-shadow-sm">
                 Full Stack Developer
               </h2>
 
@@ -60,7 +60,7 @@ export default function About() {
                 Your idea, my code <br /> together we'll create a website
                 <span className="font-bold"> that wows your audience!</span>
                 <br />
-                <span className="italic text-lg sm:text-xl">
+                <span className="">
                   Let's turn your vision into a modern web experience that gets
                   noticed!
                 </span>

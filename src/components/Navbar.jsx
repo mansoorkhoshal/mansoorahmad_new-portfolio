@@ -4,8 +4,22 @@ import { FaBars, FaTimes } from "react-icons/fa";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
 
+  const handleScroll = (e, targetId) => {
+    e.preventDefault();
+    const element = document.querySelector(targetId);
+    if (element) {
+      const offset = 70; 
+      const elementPosition = element.offsetTop - offset;
+      window.scrollTo({
+        top: elementPosition,
+        behavior: "smooth",
+      });
+    }
+    setOpen(false);
+  };
+
   const data = [
-    { link: "#", title: "About" },
+    { link: "#about", title: "About" },
     { link: "#skills", title: "Skills" },
     { link: "#services", title: "Services" },
     { link: "#opensource", title: "Open Source" },
@@ -13,7 +27,7 @@ const Navbar = () => {
   ];
 
   return (
-    <section className="w-full z-50 bg-emerald-600/95 backdrop-blur-md py-1 border-none relative">
+    <section className="w-full z-50 bg-emerald-600/95 backdrop-blur-md py-1 border-none relative scroll-smooth">
       <nav className="w-full">
         <div className="max-w-7xl mx-auto w-full">
           <div className="w-full flex items-center justify-between h-20 px-4">
@@ -27,7 +41,8 @@ const Navbar = () => {
                   <li key={index}>
                     <a
                       href={item.link}
-                      className="text-emerald-100 font-inter italic hover:text-white"
+                      onClick={(e) => handleScroll(e, item.link)}
+                      className="text-emerald-100 font-inter italic hover:text-white cursor-pointer"
                     >
                       {item.title}
                     </a>
@@ -37,7 +52,7 @@ const Navbar = () => {
             </div>
 
             <button
-              className="lg:hidden ml-4 inline-flex items-center justify-center p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-offset-2"
+              className="lg:hidden ml-4 inline-flex items-center justify-center p-2 rounded-md focus:outline focus:outline-emerald-600/95 shadow"
               aria-controls="mobile-menu"
               aria-expanded={open}
               onClick={() => setOpen((v) => !v)}
@@ -46,9 +61,13 @@ const Navbar = () => {
                 {open ? "Close menu" : "Open menu"}
               </span>
               {open ? (
-                <FaTimes className="w-6 h-6 text-white" />
+                <FaTimes
+                  className={`w-6 h-6 text-white ${
+                    open ? "rotate-animation" : ""
+                  }`}
+                />
               ) : (
-                <FaBars className="w-6 h-6 text-white" />
+                <FaBars className={`w-6 h-6 text-white`} />
               )}
             </button>
           </div>
@@ -61,14 +80,14 @@ const Navbar = () => {
           }`}
         >
           <div className="max-w-7xl mx-auto">
-            <div className="bg-emerald-600/95 backdrop-blur-sm rounded-b-md shadow-md overflow-hidden">
+            <div className="bg-emerald-600/95 backdrop-blur-sm rounded-b-md shadow-md overflow-hidden ">
               <ul className="flex flex-col gap-4 p-4 text-lg">
                 {data.map((item, index) => (
                   <li key={index}>
                     <a
                       href={item.link}
-                      onClick={() => setOpen(false)}
-                      className="block text-white font-inter italic py-2 px-2 hover:bg-emerald-500/30 rounded"
+                      onClick={(e) => handleScroll(e, item.link)}
+                      className="block text-white font-inter py-1 px-2 hover:bg-emerald-500/30 rounded cursor-pointer"
                     >
                       {item.title}
                     </a>
