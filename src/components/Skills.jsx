@@ -60,7 +60,7 @@ const Skills = () => {
           />
           <SkillCard
             icon={<SiGit className="text-red-600 text-5xl" />}
-            title="Git"
+            title="Git - Version Control"
           />
           <SkillCard
             icon={<SiGithub className="text-black text-5xl" />}
@@ -68,7 +68,7 @@ const Skills = () => {
           />
           <SkillCard
             icon={<VscVscodeInsiders className="text-blue-800 text-5xl" />}
-            title="GitHub"
+            title="Visual Studio Code"
           />
         </div>
       </div>

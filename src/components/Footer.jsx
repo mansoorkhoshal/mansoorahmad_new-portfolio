@@ -14,8 +14,8 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <img
               src={logoNav}
-              alt="logo"
-              className="w-15 h-15 rounded-full object-cover border border-neutral-600"
+              alt="owner image"
+              className="w-15 h-15 rounded-full object-cover"
             />
             <div>
               <h4 className="font-bold text-lg">Mansoor Ahmad</h4>
@@ -75,8 +75,7 @@ export default function Footer() {
         </div>
 
         <div className="mt-8 border-t border-white/10 pt-6 text-center text-sm text-white/80">
-          © {new Date().getFullYear()} Mansoor Ahmad — Built with React + Vite &
-          Tailwind
+          © {new Date().getFullYear()} Mansoor Ahmad. All right reserved.
         </div>
       </div>
     </footer>
