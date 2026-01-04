@@ -1,4 +1,4 @@
-import logoNav from "../assets/logo3.jpg";
+import logoNav from "../assets/logo3.png";
 import Lottie from "lottie-react";
 import aboutAnimation from "../assets/aboutme.json";
 import {
